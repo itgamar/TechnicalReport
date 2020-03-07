@@ -7,7 +7,7 @@ ws = wb.active
 
 # Data can be assigned directly to cells
 ws['C20'] = 'Ciao'
-ws['C22'] = 'culo'
+ws['C22'] = 'pippo'
 
 # Save the file
 wb.save('prova.xlsx')
