@@ -2,7 +2,7 @@ import tkinter as tk
 
 window = tk.Tk()
 # insert window dimension here
-window.geometry("1200x800")
+window.geometry("1000x600")
 # ability to modify the size in terms of height and width
 window.resizable(False, False)
 window.configure(background="white")
@@ -23,7 +23,7 @@ def press_button_create():
 # CUSTOMER
 text_o_customer = tk.Label(window, background="white", text=text_o_customer, fg="black", font=("Lucida Console", 12))
 text_o_customer.grid(row=1, column=0, sticky="W", padx=0, pady=0)
-text_i_customer = tk.Entry(width=180)
+text_i_customer = tk.Entry(width=100)
 text_i_customer.grid(row=2, column=0, sticky="WE", padx=10, pady=0)
 #text_i_customer.insert(0, "a default value")
 
