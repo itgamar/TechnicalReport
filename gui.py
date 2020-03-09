@@ -4,9 +4,9 @@ from openpyxl import load_workbook
 
 class MainPage:
 
-    def press_button_create(customer):
-        text_out = tk.Label(window, text=customer, fg="black", font=("Lucida Console", 12))
-        text_out.grid(row=5, column=0
+    def press_button_create(self):
+        text_out = tk.Label(window, text="ff", fg="black", font=("Lucida Console", 12))
+        text_out.grid(row=3, column=0, sticky="W")
         #wb = load_workbook('template.xlsx')
         ## grab the active worksheet
         #ws = wb.active
@@ -39,7 +39,7 @@ class MainPage:
         #text_i_address = tk.Entry()
         #text_i_address.grid(row=4, column=0, sticky="WE", padx=10, pady=0)
         # CREATE BUTTON
-        button_create = tk.Button(text="Create xlsx", command=MainPage.press_button_create(text_i_customer.get()))
+        button_create = tk.Button(text="Create xlsx", command=self.press_button_create())
         button_create.grid(row=100, column=0, padx=10, pady=20, sticky="W")
 
 
@@ -48,3 +48,4 @@ if __name__ == "__main__":
     window = tk.Tk()
     w = MainPage(window)
     window.mainloop()
+    
