@@ -7,8 +7,8 @@ def press_button_create():
     ws = wb.active
 
     # Data can be assigned directly to cells
-    ws['C20'] = 'Ciao'
-    ws['C22'] = 'pippo'
+    ws['C22'] = text
+    ws['V17'] = 'pippo'
 
     # Save the file
     wb.save('prova.xlsx')
